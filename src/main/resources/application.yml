@@ -1,16 +1,8 @@
 server:
   port: 8081
 spring:
-  datasource:
-    password: root
-    url: jdbc:mysql://localhost:3306/e-mandi?useSSL=true
-    username: root
-  jpa:
-    hibernate:
-      ddl-auto: 'update '
-    show-sql: true
-  application:
-    name: admin-service
+  profiles:
+    active: local
 eureka:
   client:
     register-with-eureka: true
