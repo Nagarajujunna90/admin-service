@@ -1,5 +1,7 @@
 package com.emandi.adminservice;
 
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Info;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -9,6 +11,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 
 @SpringBootApplication
+@OpenAPIDefinition(info = @Info(title = "admin-service"))
 public class AdminServiceApplication implements ApplicationRunner {
 	@Autowired
 	private KafkaTemplate<String, String> kafkaTemplate;
