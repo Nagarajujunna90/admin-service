@@ -1,11 +1,12 @@
 server:
-  port: 8081
+  port: 8084
 spring:
   profiles:
     active: local
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-  instance:
-    hostname: localhost
+#
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#  instance:
+#    hostname: localhost
