@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://host.docker.internal:3306/e-user?useSSL=true
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: localhost
